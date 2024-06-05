@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -357,7 +357,7 @@ Transform:
   m_GameObject: {fileID: 1019753829}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7928932, y: 0.09198413, z: 0.491}
+  m_LocalPosition: {x: -0.7928932, y: -5.33, z: -0.53}
   m_LocalScale: {x: 6.2125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,6 +375,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd7d8cf69f50154495a3a55e613d6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prehabsFrutas:
+  - {fileID: 8157107051477409038, guid: 9955942d0bf33874c8fa78bc03a3cf46, type: 3}
+  - {fileID: 6320253348557349972, guid: c797b3169ab602d4c9bdfbb0159ae50e, type: 3}
+  - {fileID: 369884670650921460, guid: 1a3b57b5ba98e6b42b71e67a66c0081d, type: 3}
+  - {fileID: 6576626298400764468, guid: 306d75d828b5a2e4db7bc46acdd03e9a, type: 3}
+  - {fileID: 9037023141136829550, guid: 8ee8cc693b355c44999dc3ca1f1a1363, type: 3}
+  delaySpawnMinimo: 0.25
+  delaySpawnMaximo: 1
+  anguloMinimo: -15
+  anguloMaximo: 15
+  fuerzalanzadoMinima: 18
+  fuerzaLanzadoMaxima: 22
+  tiempoMaximoVidaFruta: 5
 --- !u!1 &1718659773
 GameObject:
   m_ObjectHideFlags: 0
