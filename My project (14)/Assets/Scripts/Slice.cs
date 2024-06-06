@@ -1,54 +1,57 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Windows;
-using static UnityEngine.UI.Scrollbar;
 
 public class Slice : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Camera mainCamera;
-    private Boolean slicing;
-    private BoxCollider bladeCollider;
+    [SerializeField]private Camera mainCamera;
+    private bool slicing;
+    private Collider bladeCollider;
     private TrailRenderer bladeTrail;
-    private Vector3 direction;
-    private float minSliceVelocity;
+    public Vector3 direction {get; private set; }
+    public float minSliceVelocity = 0.01f;
+    public float sliceForce = 5f;
 
-    void Start()
+    private void Awake()
+    {
+        bladeCollider = GetComponent<Collider>();
+        bladeTrail = GetComponentInChildren<TrailRenderer>();
+    }
+
+    private void OnEnable()
     {
         StopSlice();
     }
-
     // Update is called once per frame
     private void Update()
     {
-        if(UnityEngine.Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0)){
             StartSlice();
-        }else if(UnityEngine.Input.GetMouseButtonUp(0)){
+        }else if(Input.GetMouseButtonUp(0)){
             StopSlice();
         }else if(slicing){
             continueSlice();
         }
     }
-    private void StartSlice(){
-        Vector3 newPosition = mainCamera.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
-        newPosition.z = 0f;
+    private void StartSlice()
+    {
+        Vector3 newPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        newPosition.z = -1f;
         transform.position = newPosition;
         slicing = true;
         bladeCollider.enabled = true;
         bladeTrail.enabled = true;
         bladeTrail.Clear();
     }
-    private void StopSlice(){
+    private void StopSlice()
+    {
         slicing = false;
         bladeCollider.enabled = false;
         bladeTrail.enabled = false;
     }
-    private void continueSlice(){
-        Vector3 newPosition = mainCamera.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
-        newPosition.z = 0f;
+    private void continueSlice()
+    {
+        Vector3 newPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        newPosition.z = -1f;
         direction = newPosition - transform.position;
         float velocity = direction.magnitude / Time.deltaTime;
         bladeCollider.enabled = velocity > minSliceVelocity;
