@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 760333103}
   m_Layer: 0
   m_Name: blade
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,7 +399,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.20236874
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0.29763126}
 --- !u!114 &760333104
 MonoBehaviour:
@@ -572,7 +572,7 @@ Transform:
   m_GameObject: {fileID: 1019753829}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7928932, y: -5.33, z: -0.53}
+  m_LocalPosition: {x: 0.1, y: -4.41, z: -0.53}
   m_LocalScale: {x: 6.2125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -703,8 +703,8 @@ Transform:
   m_GameObject: {fileID: 1718659773}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: -0.3, y: 1, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 3.119276}
+  m_LocalPosition: {x: -0.3, y: 1, z: 8e-15}
+  m_LocalScale: {x: 2.6405632, y: 10, z: 1.1715297}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
