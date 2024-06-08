@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: cf69db721bd9fe546b4cf8a84cbefddd, type: 2}
+    - target: {fileID: 2888878090132369452, guid: 306d75d828b5a2e4db7bc46acdd03e9a, type: 3}
+      propertyPath: puntajeFruta
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3010657386395494535, guid: 306d75d828b5a2e4db7bc46acdd03e9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03

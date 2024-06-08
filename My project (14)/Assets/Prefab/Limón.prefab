@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 171233758403485462, guid: 9955942d0bf33874c8fa78bc03a3cf46, type: 3}
+      propertyPath: puntajeFruta
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 269938428769732541, guid: 9955942d0bf33874c8fa78bc03a3cf46, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.015

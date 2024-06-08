@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2658682304497395276, guid: c797b3169ab602d4c9bdfbb0159ae50e, type: 3}
+      propertyPath: puntajeFruta
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2682688353393114855, guid: c797b3169ab602d4c9bdfbb0159ae50e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.015

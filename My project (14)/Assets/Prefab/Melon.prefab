@@ -4987,6 +4987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entero: {fileID: 1151455783505211576}
   cortada: {fileID: 1315795167370278165}
+  puntajeFruta: 200
 --- !u!1001 &232959295953079785
 PrefabInstance:
   m_ObjectHideFlags: 0

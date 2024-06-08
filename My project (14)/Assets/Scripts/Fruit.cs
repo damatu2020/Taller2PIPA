@@ -11,6 +11,8 @@ public class Fruit : MonoBehaviour
     private Collider fruitCollider;
     private ParticleSystem juiceParticleEffect;
 
+    public int puntajeFruta = 1;
+
     private void Awake()
     {
         fruitRigidBody = GetComponent<Rigidbody>();
@@ -20,6 +22,8 @@ public class Fruit : MonoBehaviour
 
     private void Slice(Vector3 direction, Vector3 position, float force)
     {
+        FindObjectOfType<GameManager>().increaseScore(puntajeFruta);
+
         entero.SetActive(false);
         cortada.SetActive(true);
 
