@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,8 +197,8 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 10
-  m_PreviewTimeScale: 0
+  m_Time: 0.5
+  m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -596,6 +596,7 @@ MonoBehaviour:
   - {fileID: 369884670650921460, guid: 1a3b57b5ba98e6b42b71e67a66c0081d, type: 3}
   - {fileID: 6576626298400764468, guid: 306d75d828b5a2e4db7bc46acdd03e9a, type: 3}
   - {fileID: 9037023141136829550, guid: 8ee8cc693b355c44999dc3ca1f1a1363, type: 3}
+  - {fileID: 6667090571362032002, guid: 91695552b5d778d42b8ca1e4c379ac28, type: 3}
   delaySpawnMinimo: 0.25
   delaySpawnMaximo: 1
   anguloMinimo: -15
