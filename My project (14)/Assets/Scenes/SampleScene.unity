@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -954,7 +954,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.70710677}
   m_LocalPosition: {x: 0.01, y: 1, z: -0}
-  m_LocalScale: {x: 2.1941562, y: 10, z: 1.0071715}
+  m_LocalScale: {x: 2.3253539, y: 10, z: 1.032653}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -990,6 +990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 167862287}
   score: 0
+  puntajeActual: 0
+  puntajeMax: 0
 --- !u!4 &1891954939
 Transform:
   m_ObjectHideFlags: 0
