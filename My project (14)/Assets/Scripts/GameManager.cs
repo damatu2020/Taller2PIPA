@@ -7,10 +7,17 @@ public class GameManager : MonoBehaviour
 {
     public Text scoreText;
     public int score;
+    public int puntajeActual;
+    public int puntajeMax;
 
-    private void start()
+    void Start()
     {
         newGame();
+        loadPuntMax();
+    }
+
+    private void loadPuntMax(){
+        puntajeMax = PlayerPrefs.GetInt("puntajeMax");
     }
 
     private void newGame()
@@ -23,5 +30,11 @@ public class GameManager : MonoBehaviour
     {
         score += amount;
         scoreText.text = score.ToString();
+        PlayerPrefs.SetInt("puntajeActual", score);
+        if(score > puntajeMax){
+            PlayerPrefs.SetInt("puntajeMax", score);
+            puntajeMax = score;
+        }
     }
+    
 }
